@@ -3,51 +3,6 @@
  */
 package org.example;
 
-// public class App{
-//     public int twoMul(int a, int b)
-//     {
-//         return a*b;
-//     }
-
-//     public static void main(String[] args) {
-//         App obj = new App();
-//         int Mul= obj.twoMul(8, 10);
-//         System.out.println(Mul);
-//     }
-// }
-
-// public class App{
-//     public static void main(String[] args) {
-//         String sentence = " fox jumps over the lazy fox";
-//         String [] words = sentence.toLowerCase().split(" ");
-//         int maxcount = 0;
-//         String mostfrequent ="";
-//         for(int i = 0;i< words.length;i++)
-//         {
-//             int count = 1;
-//             for(int j = i+1;j< words.length;j++)
-//             {//int count = 1;
-//                 if (words[i].equals(words[j])) {
-//                     count++;
-                    
-//                 }
-//             }
-//             if (count > maxcount) {
-//                 mostfrequent = words[i];
-//                 maxcount = count;
-                
-//             }
-//         }
-//         System.out.println("The most frequent word is : " +mostfrequent+ ", it got repeated "+maxcount+ " times.");
-        
-
-
-//     }
-
-// }
-
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
