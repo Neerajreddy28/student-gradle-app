@@ -1,11 +1,17 @@
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
+# Gradle build directories and files that should NOT be committed
+.gradle/             # Ignores the .gradle build cache directory (good)
+build/               # Ignores the build output directory (good)
 
+# IDE specific files that should NOT be committed
 .idea/
 *.iml
 .vscode/
 
+# Other temporary or system files that should NOT be committed
 *.log
 .DS_Store
+
+# Explicitly ensure the Gradle Wrapper files ARE committed
+# (These are typically auto-generated in the project root by 'gradle wrapper')
+# No need for specific un-ignore here if the above are accurate.
 
