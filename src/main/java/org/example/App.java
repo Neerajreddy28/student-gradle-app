@@ -3,7 +3,6 @@
  */
 package org.example;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,11 +13,21 @@ import java.nio.charset.StandardCharsets;
     public static void main(String[] args) {
         //String filePath = "/Users/neerajreddy/Desktop/student.csv"; // Make sure this file exists in your project directory
         String resourceName = "student.csv";
+        String configFile = "config.properties";
 
+        //BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))
+        InputStream configStream = App.class.getClassLoader().getResourceAsStream(configFile);
+        BufferedReader cs = new BufferedReader(new InputStreamReader(configStream, StandardCharsets.UTF_8));
         try (InputStream inputStream = App.class.getClassLoader().getResourceAsStream(resourceName);
-             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))) { // Specify encoding for safety
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))) 
+        
+
+             {
+                 // Specify encoding for safety
+
 
             if (inputStream == null) {
+
                 System.err.println("Error: Resource '" + resourceName + "' not found in the classpath!");
                 System.err.println("Please ensure '" + resourceName + "' is placed in 'src/main/resources'.");
                 return; // Exit if the resource isn't found
@@ -26,13 +35,24 @@ import java.nio.charset.StandardCharsets;
 
             String line;
             boolean header = true;
+            while((line = cs.readLine())!= null){
+                System.out.println("Search is based on this config-> " +line);
+            
+            //split line by equals
+            String[] studentProfile = line.split(",");
+            int sage = Integer.parseInt(studentProfile[1]);
+            int smarks = Integer.parseInt(studentProfile[2]);
+            // System.out.println(sage);
+            // System.out.println(smarks);
 
+                       
             while ((line = br.readLine()) != null) {
                 // Skip header row
                 if (header) {
                     header = false;
                     continue;
                 }
+             
 
 
                 // Split the line by comma
@@ -41,7 +61,7 @@ import java.nio.charset.StandardCharsets;
                 
                 int age = Integer.parseInt(values[2]);
                 int marks = Integer.parseInt(values[3]);
-                if (age == 15 && marks > 50) {
+                if (age >= sage && marks > smarks) {
                     System.out.println("Matched Student:");
                     System.out.println("ID: " + values[0] + ", Name: " + values[1] +
                                        ", Age: " + values[2] + ", Marks: " + values[3]);
@@ -49,9 +69,13 @@ import java.nio.charset.StandardCharsets;
             }
 
         
-        } catch (IOException e) {
+        } }
+        catch (IOException e) {
             System.out.println("Error reading the file!");
         
         }
     }
 }
+
+
+
