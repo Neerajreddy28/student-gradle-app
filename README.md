@@ -13,11 +13,10 @@ STEP 2: change the directory to the project
 
 STEP 3: once the directory is changed then enter run command
 
+      Command For Mac: ./gradlew run
 
-  For Mac: ./gradlew run
 
-
-  For windows: ./gradlew.bat run
+      Command For windows: ./gradlew.bat run
 
 
 The current configuration displays student profiles for individuals aged 15 with marks exceeding 50, indicated by a "Build Successful" message upon execution.
