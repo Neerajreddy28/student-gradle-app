@@ -20,4 +20,22 @@ STEP 3: once the directory is changed then enter run command
   For windows: ./gradlew.bat run
 
 
-Its displays the output of student with age 15 and marks above 50 and shows Build Successful.
+The current configuration displays student profiles for individuals aged 15 with marks exceeding 50, indicated by a "Build Successful" message upon execution.
+
+
+
+To modify the search criteria and retrieve different student data, access the config.properties file. This file uses the following format:
+
+
+Studentprofile,Age,Marks
+
+For example, changing the line to Studentprofile,19,90 will filter results to display students aged 19 or older with marks of 90 or greater. Adjusting these values will accordingly update the student profiles fetched.
+
+
+
+
+
+
+
+
+
