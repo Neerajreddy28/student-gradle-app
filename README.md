@@ -30,6 +30,19 @@ Studentprofile,Age,Marks
 
 For example, changing the line to Studentprofile,19,90 will filter results to display students aged 19 or older with marks of 90 or greater. Adjusting these values will accordingly update the student profiles fetched.
 
+I have updated the code with Log4j, it wont change the steps to run the code. It just has one additional file calle Log4j.xml,it is mandatory because it will be generating the output.
+you iwll be using same ./gradlew run command to ru the code. the format of the output will be bit different, remaining everything is same.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
