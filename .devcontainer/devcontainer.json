@@ -1,0 +1,11 @@
+{
+  "name": "Student Gradle App",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "./gradlew run",
+  "customizations": {
+    "vscode": {
+      "extensions": ["vscjava.vscode-java-pack"]
+    }
+  }
+}
+
