@@ -1,38 +1,32 @@
 
-STEP 1: In Order to run this, clone the git repository.
+# Student Gradle App
 
+[![Open in Codespaces](https://img.shields.io/badge/Open%20in%20Codespaces-blue?logo=github)](https://github.com/codespaces/new?repository=Neerajreddy28/student-gradle-app)
 
-    Repository: https://github.com/Neerajreddy28/student-gradle-app
+---
 
+## 🚀 Quick Start in GitHub Codespaces
 
-STEP 2: change the directory to the project 
+Click the **"Open in Codespaces"** button above to instantly launch this project in a development environment.  
+It will automatically build and run the application — no setup required!
 
+---
 
-    Command: cd student-gradle-app/
+## 🧾 Manual Instructions (For Local Setup)
 
+### ✅ STEP 1: Clone the Git Repository
 
-STEP 3: once the directory is changed then enter run command
+```bash
+git clone https://github.com/Neerajreddy28/student-gradle-app
 
-      Command For Mac: ./gradlew run
+✅ STEP 2: Change to the Project Directory
+cd student-gradle-app/
 
-
-      Command For windows: ./gradlew.bat run
-
-
-The current configuration displays student profiles for individuals aged 15 with marks exceeding 50, indicated by a "Build Successful" message upon execution.
-
-
-
-To modify the search criteria and retrieve different student data, access the config.properties file. This file uses the following format:
-
-
-Studentprofile,Age,Marks
-
-For example, changing the line to Studentprofile,19,90 will filter results to display students aged 19 or older with marks of 90 or greater. Adjusting these values will accordingly update the student profiles fetched.
-
-
-
-
+✅ STEP 3: Run the Application
+🔹 For macOS/Linux:
+./gradlew run
+🔹 For Windows:
+./gradlew.bat run
 
 
 
