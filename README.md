@@ -1,53 +1,19 @@
+# Student Gradle App
 
-STEP 1: In Order to run this, clone the git repository.
+[![Open in Codespaces](https://img.shields.io/badge/Open%20in%20Codespaces-blue?logo=github)](https://github.com/codespaces/new?repository=Neerajreddy28/student-gradle-app)
 
+---
 
-    Repository: https://github.com/Neerajreddy28/student-gradle-app
+## 🚀 Quick Start in GitHub Codespaces
 
+Click the **"Open in Codespaces"** button above to instantly launch this project in a development environment.  
+It will automatically build and run the application — no setup required!
 
-STEP 2: change the directory to the project 
+---
 
+## 🧾 Manual Instructions (For Local Setup)
 
-    Command: cd student-gradle-app/
+### ✅ STEP 1: Clone the Git Repository
 
-
-STEP 3: once the directory is changed then enter run command
-
-      Command For Mac: ./gradlew run
-
-
-      Command For windows: ./gradlew.bat run
-
-
-The current configuration displays student profiles for individuals aged 15 with marks exceeding 50, indicated by a "Build Successful" message upon execution.
-
-
-
-To modify the search criteria and retrieve different student data, access the config.properties file. This file uses the following format:
-
-
-Studentprofile,Age,Marks
-
-For example, changing the line to Studentprofile,19,90 will filter results to display students aged 19 or older with marks of 90 or greater. Adjusting these values will accordingly update the student profiles fetched.
-
-I have updated the code with Log4j, it wont change the steps to run the code. It just has one additional file calle Log4j.xml,it is mandatory because it will be generating the output.
-you iwll be using same ./gradlew run command to ru the code. the format of the output will be bit different, remaining everything is same.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```bash
+git clone https://github.com/Neerajreddy28/student-gradle-app
