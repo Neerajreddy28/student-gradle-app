@@ -17,3 +17,17 @@ It will automatically build and run the application — no setup required!
 
 ```bash
 git clone https://github.com/Neerajreddy28/student-gradle-app
+
+✅ STEP 2: Change to the Project Directory
+cd student-gradle-app/
+
+✅ STEP 3: Run the Application
+🔹 For macOS/Linux:
+./gradlew run
+🔹 For Windows:
+./gradlew.bat run
+
+
+
+
+
