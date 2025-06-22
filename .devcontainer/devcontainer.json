@@ -9,9 +9,5 @@
         "vscjava.vscode-gradle"
       ]
     }
-  },
-  "settings": {
-    "java.home": "/usr/local/openjdk-17",
-    "java.configuration.updateBuildConfiguration": "interactive"
   }
 }
